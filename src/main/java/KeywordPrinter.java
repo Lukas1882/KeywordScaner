@@ -12,7 +12,6 @@ public class KeywordPrinter {
     // StringBuffer biggest size for memory safe
     private int stringBlockSize = 200;
 
-
     public KeywordPrinter() throws Exception {
         if (outputPrimitiveFile.exists())
             outputPrimitiveFile.delete();
@@ -35,9 +34,7 @@ public class KeywordPrinter {
             outputNormalFile.delete();
         if (outputFile.exists())
             outputFile.delete();
-
     }
-
 
     public void addPrimitive(String key) throws Exception {
         try{
@@ -68,7 +65,6 @@ public class KeywordPrinter {
             throw ex;
         }
     }
-
 
     private static void mergeKeyFiles() throws IOException {
         InputStream initialStream = new FileInputStream(outputPrimitiveFile);
@@ -139,5 +135,4 @@ public class KeywordPrinter {
             fw.close();
         }
     }
-
 }

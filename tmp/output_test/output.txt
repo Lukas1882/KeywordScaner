@@ -1,1 +1,1 @@
-key1_p key2_p1 key2_p2 key4_p1 key4_p2 key1_1 key1_2 key1_3  key2_1 key2_2 key3_2 key3_1 key5_1 key5_2   
+shape food-type color red apple onion long banana yellow roundish fruit pear corn vegetable 

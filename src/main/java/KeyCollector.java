@@ -13,7 +13,6 @@ public class KeyCollector implements Runnable {
     private String inputFolder = "./tmp/collat_test/";
     private File[] files;
     private File file;
-
     private KeywordPrinter printer;
     private int corePoolSize = 1;
     private int maximumPoolSize = 5;
@@ -32,13 +31,12 @@ public class KeyCollector implements Runnable {
         this.file = file;
         File folder = new File(inputFolder);
         files = folder.listFiles();
-        try {git
+        try {
             printer = new KeywordPrinter();
         } catch(Exception ex){
             throw ex;
         }
     }
-
 
     // Scan all the files in the folder.
     public void scanFiles() throws Exception {
